@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+} /* to remove default css padding and margin settings*/
+
+body {
+	font-family: Montserrat, sans-serif;
+	background-color: #FFFBF6;
+}
+
+header {
+    background-color: #FFFBF6;
+    border: 5px black solid;
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+	font-weight: 250;
+	color: 332D27;
+	letter-spacing: 0.0002em
+	
+
+	
+}
+
+nav {
+	background-color: #FFFBF6;
+	border: 0px black solid;
+}
+
+ul {
+	text-align: center;
+	padding: 10px
+}
+
+li{
+	display: box;
+}
+
+a {
+	text-decoration: circle;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 2px;
+	width: 250px;
+	color: black;
+}
+
+a:hover { /* pseudo-class */
+	background-color: grey;
+}
+
+a:active {
+	color: #FFE2BE;
+}
+
+img {
+	display: block;
+	width: 100%;
+	margin: auto;
+	padding: 10px;
+	background-color: #FFFBF6;
+	border: 0px solid black;
+	/*float: left;*/
+}
+
+nav {
+	padding: 10px;
+}
+
+aside {
+	background-color: #FFFBF6;
+	border: 0px black solid;
+}
+
+article {
+	background-color: #FFFBF6;
+	border: 0px black solid;
+}
+
+footer {
+	background-color: #D4D1CC;
+	border: 0px black solid;
+	text-align: center;
+	padding: 10px;
+}
+
+#wrapper {
+	width: 550px;
+	margin: 10px auto;
+}
+
+#two_columns {
+	background-color: #238D99;
+	border: 0px black solid;
+	padding: 20px;
+}
+
+#left {
+	background-color: #FFFBF6;
+    border: 0px black solid;
+    padding: 20px;
+    margin: 0px; /*try changing the values of the margin*/
+    float: left;
+    width: 50%; /* left element’s width will be 3% of the available space */
+}
+
+#right {
+    background-color: #FFFBF6;
+    opacity: 10%
+    border: 1px black solid;
+    padding: 10px;
+    float: right;
+    width: 45%; /*right element’s width will be 60% of the available space*/
+
+}
+
+.clearfix:after { /* once you float elements that are nested inside a parent element it no longer add to the height of that parent element, you should use clearfix to get the two columns*/
+    visibility: hidden;
+    display: block;
+    font-size: ;
+    content: " ";
+    clear: both;
+    height: 0;
+}
